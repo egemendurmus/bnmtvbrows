@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp" />
+
+        <Button
+            android:id="@+id/btn_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giriş"
+            android:layout_below="@+id/text_dialog"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Doğrulama Kodunu Gir"
+            android:inputType="phone"
+            android:imeOptions="actionSearch|flagNoExtractUi|flagNoFullscreen"
+            android:layout_alignBottom="@+id/text_dialog"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="26dp" />
+    </RelativeLayout>
+</LinearLayout>

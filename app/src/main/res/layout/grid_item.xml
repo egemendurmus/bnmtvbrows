@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/simge"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_alignStart="@+id/isimsoyisim"
+        android:layout_alignLeft="@+id/isimsoyisim"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/tv_icon_adapter"
+       />
+
+    <TextView
+        android:id="@+id/isimsoyisim"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_below="@+id/simge"
+        android:gravity="top|center"
+        android:text="Yükleniyor"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_10sdp" />
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mobilfabrikator.goaltivibrowser">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="whateverString"
+        android:icon="@mipmap/nexalogo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:resizeableActivity="true"
+        android:roundIcon="@drawable/tvlogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:appComponentFactory">
+        <activity android:name="com.mobilfabrikator.goaltivibrowser.Ayarlar.IJKActivity"></activity>
+        <activity android:name="com.mobilfabrikator.goaltivibrowser.Ayarlar.AyarlarActivity" />
+        <activity android:name="com.mobilfabrikator.goaltivibrowser.favoripack.FavorilerimListActivity" />
+        <activity android:name="com.mobilfabrikator.goaltivibrowser.favoripack.FavoriVodOrSeriActivity" />
+        <activity
+            android:name="com.mobilfabrikator.goaltivibrowser.players.ExoPlayerVideoActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.mobilfabrikator.goaltivibrowser.StreamPack.TVplayerActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden|adjustPan|adjustResize" />
+        <activity
+            android:name="com.mobilfabrikator.goaltivibrowser.InfoPack.VodServisInfoActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.mobilfabrikator.goaltivibrowser.VodPack.VodInfoServisActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.mobilfabrikator.goaltivibrowser.players.ExoPlayerYoutubeActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.mobilfabrikator.goaltivibrowser.InfoPack.SezonFullActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.mobilfabrikator.goaltivibrowser.InfoPack.AllSeriesActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.mobilfabrikator.goaltivibrowser.MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mobilfabrikator.goaltivibrowser.VideoViewActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.mobilfabrikator.goaltivibrowser.StreamPack.ChannelCategortListActivity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.mobilfabrikator.goaltivibrowser.StreamPack.ChannelListActivity"
+            android:label="@string/title_activity_channel_list"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.mobilfabrikator.goaltivibrowser.infoActivity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.mobilfabrikator.goaltivibrowser.VodPack.VodCatList"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.mobilfabrikator.goaltivibrowser.VodPack.VodCatGridList"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.mobilfabrikator.goaltivibrowser.VodPack.VodChannelGridList"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.mobilfabrikator.goaltivibrowser.VodPack.VodFilmList"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.mobilfabrikator.goaltivibrowser.VodORStreamActivity"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.mobilfabrikator.goaltivibrowser.StreamPack.GridCatActivity"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.mobilfabrikator.goaltivibrowser.StreamPack.GridChannelListActivity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.mobilfabrikator.goaltivibrowser.SeriesPack.SeriesFilmList"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.mobilfabrikator.goaltivibrowser.SeriesPack.SeriesCatGridList"
+            android:screenOrientation="sensorLandscape"
+            android:windowSoftInputMode="stateHidden|adjustPan|adjustResize" />
+        <activity android:name="com.mobilfabrikator.goaltivibrowser.SeriesPack.SeriesCatList" />
+        <activity
+            android:name="com.mobilfabrikator.goaltivibrowser.SeriesPack.SeriesChannelGridList"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name="com.mobilfabrikator.goaltivibrowser.SeriesPack.SeriesInfoList"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.mobilfabrikator.goaltivibrowser.SeriesPack.SezonOynatmaListesi"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.mobilfabrikator.goaltivibrowser.InfoPack.InfoActivity"
+            android:screenOrientation="sensorLandscape" />
+    </application>
+
+</manifest>

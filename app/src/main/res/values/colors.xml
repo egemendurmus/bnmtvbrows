@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#dc5353</color>
+    <color name="colorPrimaryDark">#a70000</color>
+    <color name="colorAccent">#f9e090</color>
+    <color name="appTuruncu">#ff935c</color>
+
+    <color name="digiMavi">#dc5353</color>
+    <color name="colorPrimarypressed">#A9A9A9</color>
+    <color name="infoTextColor">#f1f1f1</color>
+    <color name="adaptermavi">#90caf9</color>
+
+
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#fff</color>
+
+</resources>
