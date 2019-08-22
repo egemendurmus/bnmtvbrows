@@ -66,7 +66,7 @@ public class VodORStreamActivity extends Activity {
         System.out.println("kjşsbds "+bitisTarihi);
         if(StringUtils.isEmpty(bitisTarihi)){
             bitisTarihi="Limitsiz Kullanıcı";
-        }
+         }
 
         txtBitisTarihi.setText("Bitiş Tarihiniz : "+bitisTarihi);
         txtMacAdress.setText("Mac Adresiniz : "+getMacAddr());
