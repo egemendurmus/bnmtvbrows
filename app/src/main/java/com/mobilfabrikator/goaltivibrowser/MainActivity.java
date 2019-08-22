@@ -478,6 +478,7 @@ public class MainActivity extends Activity {
                     MainActivity.userName + "&password=" + MainActivity.password;
             // Making a request to url and getting response
             String jsonStr = sh.makeServiceCall(authUrl);
+            System.out.println(jsonStr);
             if (jsonStr != null) {
                 try {
                     JSONObject jsonObject = new JSONObject(jsonStr);
@@ -490,6 +491,8 @@ public class MainActivity extends Activity {
 
                 } catch (JSONException e) {
                     e.printStackTrace();
+                    System.out.println("hata "+e);
+
                 }
             }
 
@@ -507,7 +510,7 @@ public class MainActivity extends Activity {
                 pDialog.dismiss();
 
             try {
-                if (!expDate.equals("")) {
+                if (!StringUtils.isEmpty(expDate)&&!expDate.equals("null")) {
                     bitisText.setText("Son Kullanım Tarihiniz : " + getTime(expDate));
                     bitisText.setTextColor(Color.parseColor("#CD5C5C"));
                     bitisText.setTextSize(8f);
@@ -515,6 +518,11 @@ public class MainActivity extends Activity {
                     hideSoftKeyboard();
                     Intent i = new Intent(MainActivity.this, VodORStreamActivity.class);
                     i.putExtra("bitis", getTime(expDate));
+                    startActivity(i);
+                    finish();
+                }else{
+                    hideSoftKeyboard();
+                    Intent i = new Intent(MainActivity.this, VodORStreamActivity.class);
                     startActivity(i);
                     finish();
                 }

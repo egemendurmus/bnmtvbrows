@@ -12,10 +12,10 @@ android {
     }
     buildTypes {
         debug {
-            buildConfigField "String", "SERVER_URL", '"xx"'
+            buildConfigField "String", "SERVER_URL", '"goaltivi.live"'
         }
         release{
-            buildConfigField "String", "SERVER_URL", '"xx"'
+            buildConfigField "String", "SERVER_URL", '"goaltivi.live"'
         }
     }
 

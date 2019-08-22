@@ -25,6 +25,8 @@ import com.mobilfabrikator.goaltivibrowser.StreamPack.GridCatActivity;
 import com.mobilfabrikator.goaltivibrowser.VodPack.VodCatGridList;
 import com.mobilfabrikator.goaltivibrowser.favoripack.FavoriVodOrSeriActivity;
 
+import org.apache.commons.lang3.StringUtils;
+
 public class VodORStreamActivity extends Activity {
     public static String vodType;
     Time today;
@@ -61,6 +63,11 @@ public class VodORStreamActivity extends Activity {
         final TextView txtSaat = findViewById(R.id.textView_time);
         today = new Time(Time.getCurrentTimezone());
         today.setToNow();
+        System.out.println("kjşsbds "+bitisTarihi);
+        if(StringUtils.isEmpty(bitisTarihi)){
+            bitisTarihi="Limitsiz Kullanıcı";
+        }
+
         txtBitisTarihi.setText("Bitiş Tarihiniz : "+bitisTarihi);
         txtMacAdress.setText("Mac Adresiniz : "+getMacAddr());
         txtSaat.setText(today.format("%k:%M"));
