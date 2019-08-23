@@ -63,7 +63,6 @@ public class VodORStreamActivity extends Activity {
         final TextView txtSaat = findViewById(R.id.textView_time);
         today = new Time(Time.getCurrentTimezone());
         today.setToNow();
-        System.out.println("kjşsbds "+bitisTarihi);
         if(StringUtils.isEmpty(bitisTarihi)){
             bitisTarihi="Limitsiz Kullanıcı";
          }
